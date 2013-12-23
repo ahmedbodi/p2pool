@@ -275,6 +275,7 @@ nets = dict(
         DUMB_SCRYPT_DIFF=2**16,
         DUST_THRESHOLD=1e8,
     ),
+
     bbqcoin=math.Object(
         P2P_PREFIX='fde4d942'.decode('hex'),
         P2P_PORT=19323,
@@ -295,6 +296,7 @@ nets = dict(
         DUMB_SCRYPT_DIFF=2**16,
         DUST_THRESHOLD=1e8,
     ),
+
     franko=math.Object(
         P2P_PREFIX='7defaced'.decode('hex'),
         P2P_PORT=7912,
@@ -315,6 +317,7 @@ nets = dict(
         DUMB_SCRYPT_DIFF=2**16,
         DUST_THRESHOLD=1e8,
     ),
+
     dogecoin=math.Object(
         P2P_PREFIX='c0c0c0c0'.decode('hex'),
         P2P_PORT=22556,
@@ -336,6 +339,7 @@ nets = dict(
         DUMB_SCRYPT_DIFF=2**16,
         DUST_THRESHOLD=0.03e8,
     ),
+
 )
 for net_name, net in nets.iteritems():
     net.NAME = net_name
