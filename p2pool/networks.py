@@ -235,6 +235,7 @@ nets = dict(
         ANNOUNCE_CHANNEL='#xpool',
         VERSION_CHECK=lambda v: True,
     ),
+
     franko=math.Object(
         PARENT=networks.nets['franko'],
         SHARE_PERIOD=15, # seconds target spacing
@@ -255,6 +256,7 @@ nets = dict(
         ANNOUNCE_CHANNEL='#xpool',
         VERSION_CHECK=lambda v: True,
     ),
+
     dogecoin=math.Object(
         PARENT=networks.nets['dogecoin'],
         SHARE_PERIOD=15, # seconds target spacing
@@ -275,6 +277,7 @@ nets = dict(
         ANNOUNCE_CHANNEL='#xpool',
         VERSION_CHECK=lambda v: True,
     ),
+
     bbqcoin=math.Object(
         PARENT=networks.nets['bbqcoin'],
         SHARE_PERIOD=10, # seconds
@@ -295,7 +298,6 @@ nets = dict(
         ANNOUNCE_CHANNEL='#xpool',
         VERSION_CHECK=lambda v: True,
     ),
-
 
 )
 for net_name, net in nets.iteritems():
