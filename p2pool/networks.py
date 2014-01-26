@@ -236,6 +236,27 @@ nets = dict(
         VERSION_CHECK=lambda v: True,
     ),
 
+    globalcoin=math.Object(
+        PARENT=networks.nets['globalcoin'],
+        SHARE_PERIOD=10, # seconds target spacing
+        NEW_SHARE_PERIOD=10, # seconds
+        CHAIN_LENGTH=3*60*60//10, # shares
+        REAL_CHAIN_LENGTH=3*60*60//10, # shares
+        TARGET_LOOKBEHIND=200, # shares coinbase maturity
+        SPREAD=45, # blocks
+        NEW_SPREAD=45, # blocks
+        IDENTIFIER='3FD0991E08DBA881'.decode('hex'),
+        PREFIX='57C14FE399EBDFD3'.decode('hex'),
+        P2P_PORT=23660,
+        MIN_TARGET=0,
+        MAX_TARGET=2**256//2**20 - 1,
+        PERSIST=False,
+        WORKER_PORT=8860,
+        BOOTSTRAP_ADDRS='glc.xpool.net'.split(' '),
+        ANNOUNCE_CHANNEL='#xpool',
+        VERSION_CHECK=lambda v: True,
+    ),
+
 )
 for net_name, net in nets.iteritems():
     net.NAME = net_name
