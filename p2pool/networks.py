@@ -252,7 +252,7 @@ nets = dict(
         MAX_TARGET=2**256//2**20 - 1,
         PERSIST=False,
         WORKER_PORT=8860,
-        BOOTSTRAP_ADDRS='glc.xpool.net'.split(' '),
+        BOOTSTRAP_ADDRS='glc.xpool.net us-east1.cryptovein.com'.split(' '),
         ANNOUNCE_CHANNEL='#xpool',
         VERSION_CHECK=lambda v: True,
     ),
