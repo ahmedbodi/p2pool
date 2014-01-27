@@ -190,7 +190,7 @@ nets = dict(
         PERSIST=False,
         WORKER_PORT=8830,
         BOOTSTRAP_ADDRS='crc.xpool.net us-east1.cryptovein.com'.split(' '),
-        ANNOUNCE_CHANNEL='#craftcoin',
+        ANNOUNCE_CHANNEL='#xpool',
         VERSION_CHECK=lambda v: True,
     ),
 
