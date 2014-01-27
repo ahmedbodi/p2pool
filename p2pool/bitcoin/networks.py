@@ -185,8 +185,8 @@ nets = dict(
         BLOCK_PERIOD=40, # s targetspacing
         SYMBOL='DGC',
         CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'digitalcoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/digitalcoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.digitalcoin'), 'digitalcoin.conf'),
-        BLOCK_EXPLORER_URL_PREFIX='http://dgc.cryptocoinexplorer.com/block/',
-        ADDRESS_EXPLORER_URL_PREFIX='http://dgc.cryptocoinexplorer.com/address/',
+        BLOCK_EXPLORER_URL_PREFIX='http://altexplorer.net/block/',
+        ADDRESS_EXPLORER_URL_PREFIX='http://altexplorer.net/address/',
         SANE_TARGET_RANGE=(2**256//1000000000 - 1, 2**256//1000 - 1),
         DUMB_SCRYPT_DIFF=2**16,
         DUST_THRESHOLD=1e8,
@@ -206,8 +206,8 @@ nets = dict(
         BLOCK_PERIOD=30, # s targetspacing
         SYMBOL='WDC',
         CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'worldcoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/worldcoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.worldcoin'), 'worldcoin.conf'),
-        BLOCK_EXPLORER_URL_PREFIX='http://wdc.cryptocoinexplorer.com/block/',
-        ADDRESS_EXPLORER_URL_PREFIX='http://wdc.cryptocoinexplorer.com/address/',
+        BLOCK_EXPLORER_URL_PREFIX='http://altexplorer.net/block/',
+        ADDRESS_EXPLORER_URL_PREFIX='http://altexplorer.net/address/',
         SANE_TARGET_RANGE=(2**256//1000000000 - 1, 2**256//1000 - 1),
         DUMB_SCRYPT_DIFF=2**16,
         DUST_THRESHOLD=1e8,
@@ -248,8 +248,8 @@ nets = dict(
         BLOCK_PERIOD=30, # s targetspacing
         SYMBOL='CSC',
         CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'casinocoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/casinocoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.casinocoin'), 'casinocoin.conf'),
-        BLOCK_EXPLORER_URL_PREFIX='http://casinocoin.mooo.com/block/',
-        ADDRESS_EXPLORER_URL_PREFIX='http://casinocoin.mooo.com/address/',
+        BLOCK_EXPLORER_URL_PREFIX='http://altexplorer.net/block/',
+        ADDRESS_EXPLORER_URL_PREFIX='http://altexplorer.net/address/',
         SANE_TARGET_RANGE=(2**256//1000000000 - 1, 2**256//1000 - 1),
         DUMB_SCRYPT_DIFF=2**16,
         DUST_THRESHOLD=1e8,
@@ -269,8 +269,8 @@ nets = dict(
         BLOCK_PERIOD=180, # s targetspacing
         SYMBOL='ANC',
         CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'anoncoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/anoncoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.anoncoin'), 'anoncoin.conf'),
-        BLOCK_EXPLORER_URL_PREFIX='http://explorer.anoncoin.net/block/',
-        ADDRESS_EXPLORER_URL_PREFIX='http://explorer.anoncoin.net/address/',
+        BLOCK_EXPLORER_URL_PREFIX='http://altexplorer.net/block/',
+        ADDRESS_EXPLORER_URL_PREFIX='http://altexplorer.net/address/',
         SANE_TARGET_RANGE=(2**256//1000000000 - 1, 2**256//1000 - 1),
         DUMB_SCRYPT_DIFF=2**16,
         DUST_THRESHOLD=1e8,
