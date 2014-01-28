@@ -21,7 +21,7 @@ Original P2Pool README:
 Requirements:
 -------------------------
 Generic:
-* Bitcoin >=0.6.4
+* Bitcoin >=0.8.5
 * Python
 * Twisted
 * python-argparse (for Python <=2.6)
